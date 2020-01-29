@@ -29,8 +29,8 @@
 
 
         </div>
-        <div class="popup" id="add-card">
-            <div class="popup__content">
+        <div class="popup">
+            <div class="popup__content popup__content_hidden" id="add-card-content">
                 <img src="./images/close.svg" alt="" class="popup__close">
                 <h3 class="popup__title">Новое место</h3>
                 <form class="popup__form" name="new">
@@ -42,9 +42,8 @@
                     <button type class="button popup__button">+</button>
                 </form>
             </div>
-        </div>
-        <div class="popup" id="profile">
-            <div class="popup__content">
+
+            <div class="popup__content popup__content_hidden" id="profile-content">
                 <img src="./images/close.svg" alt="" class="popup__close">
                 <h3 class="popup__title">Редактировать профиль</h3>
                 <form class="popup__form" name="profile">
@@ -55,15 +54,12 @@
                     <button type class="button popup__button popup__button_text18">Сохранить</button>
                 </form>
             </div>
-        </div>
-        <div class="popup" id="big-size-image">
-            <div class="popup__content-image">
+            <div class="popup__content-image popup__content_hidden" id="big-size-image-content">
                 <img src="./images/close.svg" alt="" class="popup__close">
                 <img src="" class="popup__image">
             </div>
         </div>
     </div>
-    <script src="./js/mock.js"></script>
     <script src="./js/card.js"></script>
     <script src="./js/card-list.js"></script>
     <script src="./js/popup.js"></script>

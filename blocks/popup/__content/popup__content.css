@@ -13,3 +13,7 @@
     width: calc(100% - 60px);
   }
 }
+
+.popup__content_hidden {
+  display: none;
+}

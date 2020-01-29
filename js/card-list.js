@@ -4,13 +4,17 @@ class CardList {
         cardsArray,
         createCard,
         likeCard,
-        removeCard
+        removeCard,
+        zoom,
+        zoomContent,
     ) {
         this._parentNode = node
         this._cardsArray = cardsArray
         this._createCard = createCard
         this._likeCard = likeCard
         this._removeCard = removeCard
+        this._zoom = zoom
+        this._zoomContent = zoomContent
     }
 
     init() {
@@ -40,9 +44,9 @@ class CardList {
         }
         // Зум
         if (event.target.classList.contains('place-card__image')) {
-            const popupImage = document.querySelector('.popup__image');
-            popupImage.src = event.target.style.backgroundImage.slice(5, -2);
-            toggleBigSizeImage();
+            const popupImage = document.querySelector('.popup__image')
+            popupImage.src = event.target.style.backgroundImage.slice(5, -2)
+            this._zoom(this._zoomContent)
             return
         }
     }
